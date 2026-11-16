@@ -1,0 +1,7 @@
+historia de usuario es un requerimiento del usuario
+se englosan/divide en tareas
+fizzbuzz que hace? pregunta de examen
+import unittest importa una libreria
+class Testfizzbuzz(unittest.TestCase): todas las clases empiezan con una letra mayuscula
+class Testfizzbuzz(unittest.TestCase):def pasa a ser un metodo
+    def
