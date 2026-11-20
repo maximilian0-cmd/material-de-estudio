@@ -1,0 +1,63 @@
+def fizzbuzz(num):
+    """
+    Devuelve el resultado del juego FizzBuzz para un número entero.
+
+    Reglas:
+        - Si el número es múltiplo de 3 y de 5, devuelve "fizzbuzz".
+        - Si es múltiplo solo de 3, devuelve "fizz".
+        - Si es múltiplo solo de 5, devuelve "buzz".
+        - En cualquier otro caso, devuelve el número sin modificar.
+
+    Args:
+        num (int): Número entero a evaluar.
+
+    Returns:
+        str | int: "fizzbuzz", "fizz" o "buzz" según corresponda;
+        si no es múltiplo de 3 ni de 5, devuelve el mismo número recibido.
+
+    Examples:
+        >>> fizzbuzz(15)
+        'fizzbuzz'
+        >>> fizzbuzz(9)
+        'fizz'
+        >>> fizzbuzz(10)
+        'buzz'
+        >>> fizzbuzz(7)
+        7
+    """
+    if num % 3 == 0 and num % 5 == 0:
+        return "fizzbuzz"
+    if num % 3 == 0:
+        return "fizz"
+    if num % 5 == 0:
+        return "buzz"
+    if num == 0:
+        return "fizzbuzz"
+    return num
+
+PROBLEMA:
+Prueba de escritorio    
+print(fizzbuzz(15))-> fizz <> fizzbuzz
+
+Devuelve fizz porque el código se lee de arriba  abajo,
+entonces primero lee la primer condición (num%3==0) y se detiene en el primer return 
+
+SOLUCION:
+poner como primera condicion "if num % 3 == 0 and num % 5 == 0:" y si esta cumple el codigo se detiene en el primer return
+
+
+¿Que es un test unitario?
+
+Un test unitario es un bloque de código que prueba automáticamente una unidad 
+pequeña de tu programa (normalmente una función) de forma aislada. 
+Le das una entrada conocida y verificás que la salida sea la esperada. 
+Si algún día modificás la función y rompés algo, el test falla y te avisa
+
+unittest "se usa para hacer test unitario en python"
+
+desarrollo <> produccion
+
+desarrollo"cuando estamos haciendo codigo"
+
+produccion"cuando ya lo tiene el cliente en las manos"
+
