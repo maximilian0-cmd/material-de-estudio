@@ -61,3 +61,6 @@ desarrollo"cuando estamos haciendo codigo"
 
 produccion"cuando ya lo tiene el cliente en las manos"
 
+libro de python
+https://wannacode.dev/es/python/
+
