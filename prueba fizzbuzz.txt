@@ -1,0 +1,126 @@
+https://www.educacionit.com/?srsltid=AY6E962-ldvCoPcCGeS0FojYMsuSxNrF60KfMXwf203b7nTSdrn_F8TP
+
+
+actividad de los desarrolladores:
+
+1-leer el ticket(tarea a realizar)
+2-leer y escribir codigo(codear)
+3-hacer test (testing unitario)
+
+
+
+
+
+TAREA #25: Implementar fizzbuzz(num)
+Prioridad: Alta | Tipo: Tarea | Cliente: Juguetes el toni S.A.
+
+Descripción
+Implementar la función fizzbuzz(num), que recibe un número entero y devuelve qué se debe decir en el juego Fizz Buzz.
+
+Criterios de aceptación
+
+1)Si num es múltiplo de 3 (y no de 5), devuelve "Fizz".
+2)Si num es múltiplo de 5 (y no de 3), devuelve "Buzz".
+3)Si num es múltiplo de 3 y de 5, devuelve "FizzBuzz".
+4)Si num es 0, devuelve el valor 0.
+5)Si no cumple con lo anterior devuelve el mismo número entero.
+
+Ctrl + / (GOOGLE COLAB)
+Ctrl k Ctrl U (VSCode)
+
+2)Escribir en test_qa.py una clase TestQA (con unittest) que pruebe 
+cada criterio de aceptación. Probar los criterios de aceptación anteriores. 
+Si el test falla realizar las modificaciones necesarias en la función. 
+Volver a testear. Escribir la solución de la función correcta en una hoja 
+y los test de verificación.
+
+import unittest
+
+# el nombre de la class empieza con mayus
+class TestQA(unittest.TestCase):
+# el def dentro del class se llama "metodo"
+    def test_multiplo_3(self):
+# segun el criterio de aceptación cambia que devuelve
+        self.assertEqual(fizzbuzz(9),"fizz")
+    def test_multiplo_5(self):
+        self.assertEqual(fizzbuzz(20),"buzz")
+    def test_multiplo_3_and_multiplo_5(self):
+        self.assertEqual(fizzbuzz(15),"fizzbuzz")
+    def test_no_multiplo(self):
+        self.assertEqual(fizzbuzz(98),98)
+    def test_0(self):
+        self.assertEqual(fizzbuzz(0),"fizzbuzz")
+    def test_multiplo_negativo(self):
+        self.assertEqual(fizzbuzz(-15),"fizzbuzz")
+
+if __name__=='__main__':
+    unittest.main()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+https://github.com/cealonso/repo_examen_2026
+
+Actividad de los desarrolladores:
+
+1- Leer el ticket(tarea a realizar).
+2- Leer y Escribir codigo (codear).
+3- Hacer Test (Testing Unitario).
+
+TAREA #25: Implementar fizzbuzz(num)
+Prioridad: Alta | Tipo: Tarea | Cliente: Juguetes el toni S.A.
+
+Descripción
+Implementar la función fizzbuzz(num), que recibe un número entero 
+y devuelve qué se debe decir en el juego Fizz Buzz.
+
+Criterios de aceptación
+
+1) Si num es múltiplo de 3 (y no de 5), devuelve "Fizz".
+2) Si num es múltiplo de 5 (y no de 3), devuelve "Buzz".
+3) Si num es múltiplo de 3 y de 5, devuelve "FizzBuzz".
+4) Si num es 0, devuelve el valor 0.
+5) Si no cumple con lo anterior devuelve el mismo número entero.
+
+1) Descargar el archivo entrega.py
+
+Ctrl + / (GOOGLE COLAB)
+Ctrl k Ctrl U (VSCode)
+
+2) Escribir en test_qa.py una clase TestQA (con unittest) que pruebe 
+cada criterio de aceptación. Probar los criterios de aceptación anteriores. 
+Si el test falla realizar las modificaciones necesarias en la función. 
+Volver a testear. Escribir la solución de la función correcta en una hoja 
+y los test de verificación.
+
+import unittest
+class TestQA(unittest.TestCase):
+    def test_multiplo_3(self):
+        self.assertEqual(fizzbuzz(9),"Fizz")
+    def test_multiplo_5(self):
+        self.assertEqual(fizzbuzz(20),"Buzz")
+    def test_multiplo_3_and_multiplo_5(self):
+        self.assertEqual(fizzbuzz(15),"FizzBuzz") 
+    def test_cero(self):
+				self.assertEqual(fizzbuzz(0), 0)
+    def test_no_multiplo(self):
+        self.assertEqual(fizzbuzz(22),22)
+unittest.main(argv=[''], exit=False)
+      
+    
+#VSCode
+if __name__=='__main__':
+    unittest.main()
+#Colab
+unittest.main(argv=[''], exit=False)
